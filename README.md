@@ -3,9 +3,7 @@
 ## Question 1
 
 ### Part a.
-Describe what happens during the flashing process. What files are generated when you build the project? What part of
-memory is written to on the MCU? What enables STM32CubeIDE to communicate with your board?
-What tool or protocol is used to transfer the compiled binary to the microcontroller?
+Describe what happens during the flashing process. What files are generated when you build the project? What part of memory is written to on the MCU? What enables STM32CubeIDE to communicate with your board? What tool or protocol is used to transfer the compiled binary to the microcontroller?
 
 ### Part b.
 Before running the code:
@@ -16,5 +14,8 @@ After running the code:
 
 ## Question 2
 
-### Part a
-There are three user LEDs available in the NUCLEO board we are using: User LD1 - which is connected to PC7-, User LD2 - which is connected to PB7 - and User LD3 - which is connected to PB14. These are all GPIOs which have been cofigured to 
+# FIX
+### Part a 
+There are three user LEDs available in the NUCLEO board we are using: User LD1 - which is connected to PC7-, User LD2 - which is connected to PB7 - and User LD3 - which is connected to PB14. These are all pins which should be configured as GPIOs for the LEDs, such that you can turn the LED on by setting the I/O to High, and turn the LED off by setting the I/O to Low. Since these are GPIO pins, one could write and read to/from them. This is why there are solder bridges which can be connected or disconnected in order to give the user of the board the ability to select whether the LED is connected or not to the GPIO.
+
+### Part b
