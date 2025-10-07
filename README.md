@@ -14,5 +14,7 @@ Before running the code:
 After running the code:
 <img width="1266" height="190" alt="Pasted Graphic 1" src="https://github.com/user-attachments/assets/60b550be-4de8-4999-9940-710afbea2bc7" />
 
-
 ## Question 2
+
+### Part a
+There are three user LEDs available in the NUCLEO board we are using: User LD1 - which is connected to PC7-, User LD2 - which is connected to PB7 - and User LD3 - which is connected to PB14. These are all GPIOs which have been cofigured to 
