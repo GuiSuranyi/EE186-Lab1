@@ -6,9 +6,17 @@
 Describe what happens during the flashing process. What files are generated when you build the project? What part of memory is written to on the MCU? What enables STM32CubeIDE to communicate with your board? What tool or protocol is used to transfer the compiled binary to the microcontroller? 
 
 During the flashing process the files which are in the /Src of our project are first compiled into binaries and then are written into the flash of the STM32L4 microcontroller via the ST-Link debugger. 
-What files are generated when you build the project? 
-- What part of memory is written to on the MCU? 
-  The code is written to the Flash memory in our MCU. 
+
+- What files are generated when you build the project?
+  
+- What part of memory is written to on the MCU?
+The code is written to the Flash memory in our MCU.
+
+- What enables STM32CubeIDE to communicate with your board?
+The STM32CubeIDE communicates to the NUCLEO board via the ST-Link hardware interface which is present in the board. When we connect the USB cable to the board we are rather connecting to another MCU which acts as an interface with the IC we are actually trying to program. This is what enables us to communicate to the chip via our USB cable and debug our code.
+
+- What tool or protocol is used to transfer the compiled binary to the microcontroller?
+Once again, the ST-Link is the crucial component which enables us to connect to the board. First, it communicates over the USB protocol with our computer, such that when we flash the code it is first being transfered to the ST-Link device. The ST-Link then uses another serial protocol (the SWD protocol) to communicate with the STM32L4 MCU and write to its Flash memory. So it is a combination of two combination protocols and the ST-Link hardware tool. 
 
 
 # FIX
