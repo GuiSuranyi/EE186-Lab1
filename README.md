@@ -3,11 +3,11 @@
 ## 2 Flashing & Debugging Code
 
 ### Part a.
-Describe what happens during the flashing process. What files are generated when you build the project? What part of memory is written to on the MCU? What enables STM32CubeIDE to communicate with your board? What tool or protocol is used to transfer the compiled binary to the microcontroller? 
-
-During the flashing process the files which are in the /Src of our project are first compiled into binaries and then are written into the flash of the STM32L4 microcontroller via the ST-Link debugger. 
+During the flashing process the tracked files which are in our project are first compiled into binaries and then are written into the flash of the STM32L4 microcontroller via the ST-Link debugger. 
 
 What files are generated when you build the project?
+
+- When we build the project, a new folder called "Binaries" gets created and inside of it, the binary file "lab1.elf" is generated. Also, inside of the Debug folder, some new files are generated: "lab1.elf", "lab1.map" and "lab1.list". Also a few new files are added to Debug/Src: "main.o", "syscall.o", "sysmem.o", "main.cyclo", "main.d", "main.su", "syscalls.cyclo", "syscalls.d", "syscalls.su", "sysmem.cyclo", "sysmem.d" and "sysmem.su". 
 
 What part of memory is written to on the MCU?
   
