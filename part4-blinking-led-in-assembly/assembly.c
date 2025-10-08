@@ -1,5 +1,5 @@
 /*
- * Code in assembly to turn on the Blue LED (User_LD2) located on PB7. This code configures the
+ * Code in assembly to turn on the Blue LED (User_LD2) located on PB7. This code configures the 
  * MODER (to output), TYPER (to push-pull), SPEED (to low) and the PUPD (to disabled - no pull-up, pull-down).
  * It finally turns the GPIO PB7 on.
  */
@@ -63,4 +63,5 @@ int main (void) {
 
 	while (1);
 }
+
 
